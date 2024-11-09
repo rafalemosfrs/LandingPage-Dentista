@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./services.css);
+@import url(./Testimonials.css);
+@import url(./aboutMe.css);
+@import url(./clinic.css);
+@import url(./contact.css);
+
+:root {
+    --primarySource: "Poppins";
+    --mainBackground: ##FFF9FD;
+    --black: #000000;
+    --white: #FFFFFF;
+    --light-blue: #44C6E9;
+    --blue: #2977D5;
+    --dark-blue: #00296D;
+    --box-shadow: #D4E4F4;
+    --background-abouMe: #D4E4F4;
+    --background-services: rgba(255, 249, 253, 0.60);
+    --gradient: linear-gradient(45deg, rgba(37, 37, 37, 0.21) 0%, rgba(68, 198, 233, 0.35) 100%);
+    --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+body{
+    background-color: var(--mainBackground);
+    color: var(--dark-blue);
+    font-family: var(--primarySource);
+    font-size: 1rem;
+    font-weight: 400;
+};

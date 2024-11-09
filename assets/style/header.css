@@ -1,0 +1,212 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 4rem;
+    padding: 0;
+    box-shadow: 0px 1px 10px 0px rgba(102, 102, 102, 0.15);
+}
+
+.menu__content {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    gap: 1rem;
+}
+
+.menu__text {
+    text-align: center;
+    gap: 0.7rem;
+}
+
+.menu__text h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.menu__text h3 {
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__container {
+    display: flex;
+    align-items: center;
+}
+
+.menu__container--input {
+    display: none;
+}
+
+.menu__container--input:checked ~ .menu__container--label > .menu__container--span {
+    background-image: url("../image/menuDropdownBranco.svg");
+}
+
+.menu__container--input:checked ~ .menu__container--label {
+    background: var(--gradient-blue);
+}
+
+.menu__container--input:checked ~ .menu__container__list {
+    display: block;
+}
+
+.menu__container--span {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../image/menuDropdown.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container--image {
+    padding: 1.01em;
+}
+
+.menu__container__list {
+    display: none;
+    position: absolute;
+    top: 10%;
+    width: 60vw;
+}
+
+.menu__container__list--item {
+    padding: 1rem 0;
+    background-color: var(--white);
+}
+
+.menu__container__list--link {
+    background: var(--dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.menu__container__desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    .menu {
+        height: 6rem;
+    }
+
+    .menu__content {
+        justify-content: flex-start;
+        gap: 2rem;
+        margin-left: 2rem;
+        width: 30vw;
+    }
+
+    .menu__logo img {
+        width: 5.5rem;
+        max-height: 5rem;
+    }
+
+    .menu__text h1 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .menu__text h3 {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .menu__container__desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu__container__desktop__list {
+        display: flex;
+        justify-content: flex-end;
+        width: 70vw;
+        gap: 4rem;
+    }
+
+    .menu__container__desktop__list--link {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--dark-blue);
+    }
+
+    .menu__container {
+        display: none;
+    }
+}
+
+.menu__text h1 {
+    color: var(--dark-blue);
+    transition: color 0.3s ease;
+}
+
+.menu__text h1:hover {
+    color: var(--light-blue);
+}
+
+.menu__text h3 {
+    color: var(--gray);
+    transition: color 0.3s ease;
+}
+
+.menu__text h3:hover {
+    color: var(--dark-blue);
+}
+
+.menu__container--span {
+    transition: transform 0.3s ease;
+}
+
+.menu__container__list--link {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu__container__list--link:hover {
+    color: var(--light-blue);
+    transform: translateX(5px);
+}
+
+.menu__logo img {
+    transition: transform 0.3s ease;
+}
+
+.menu__logo img:hover {
+    transform: scale(1.1);
+}
+
+.menu__container__desktop__list--link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu__container__desktop__list--link:hover {
+    color: var(--light-blue);
+    transform: translateY(-3px);
+}
+
+.menu__container__desktop__list--item:last-child .menu__container__desktop__list--link {
+    border: 2px solid var(--dark-blue); 
+    padding: 0.5rem 1rem;
+    border-radius: 5px; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu__container__desktop__list--item:last-child .menu__container__desktop__list--link:hover {
+    border-color: var(--light-blue);
+}
+
+
+

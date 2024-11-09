@@ -1,0 +1,141 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 3.75rem 1.25rem;
+    gap: 2.5rem;
+    box-sizing: border-box;
+}
+
+.services h2 {
+    color: var(--dark-blue);
+    text-shadow: 5px 5px 0px var(--box-shadow);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.services h2:hover {
+    color: var(--light-blue);
+}
+
+.services__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+    width: 100vw;
+    justify-items: center;
+}
+
+.services__content__service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    padding: 2rem 1.25rem;
+    gap: 1rem;
+    border-radius: 0.625rem;
+    background: var(--background-services);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services__content__service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services__content__service h3 {
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.services__content__service h3:hover {
+    color: var(--light-blue);
+}
+
+.services__content__service p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.4rem;
+    color: var(--gray);
+}
+
+.services__content__service a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--light-blue);
+    text-decoration: none;
+    padding-right: 1.2rem;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.services__content__service a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid var(--light-blue);
+    border-bottom: 2px solid var(--light-blue);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.services__content__service a:hover {
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width: 600px) {
+    .services__content__service {
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .services {
+        background-image: url(../image/tooth.png);
+        background-repeat: no-repeat;
+        background-size: 800px;
+        background-position: center right;
+    }
+
+    .services h2 {
+        font-size: 4rem;
+    }
+
+    .services__content {
+        gap: 3rem;
+    }
+
+    .services__content__service {
+        max-width: 1000px;
+        margin-top: 2rem;
+    }
+
+    .services__content__service h3 {
+        font-size: 1.5rem;
+    }
+
+    .services__content__service p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .services__content__service a {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
