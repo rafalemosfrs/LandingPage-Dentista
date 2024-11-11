@@ -47,11 +47,6 @@
     transform: translateX(100%);
 }
 
-.testimonials__content.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .testimonials__content h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -139,3 +134,15 @@
         font-size: 1rem;
     }
 }
+
+.testimonials__content {
+    opacity: 0;
+    transform: translateX(100%); /* Inicia fora da tela à direita */
+    transition: opacity 2.5s ease, transform 2s ease;
+}
+
+.testimonials__content--visible {
+    opacity: 1;
+    transform: translateX(0); /* Retorna à posição original */
+}
+

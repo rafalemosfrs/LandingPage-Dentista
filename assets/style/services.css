@@ -17,10 +17,6 @@
     transition: color 0.3s ease;
 }
 
-.services h2:hover {
-    color: var(--light-blue);
-}
-
 .services__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -138,4 +134,15 @@
         font-size: 1rem;
         font-weight: 500;
     }
+}
+
+.services__content__service {
+    opacity: 0;
+    transform: translateX(100px); /* Começa fora da tela à direita */
+    transition: opacity 2.5s ease, transform 2s ease;
+}
+
+.services__content__service--visible {
+    opacity: 1;
+    transform: translateX(0); /* Volta para a posição original */
 }

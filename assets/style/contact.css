@@ -1,15 +1,29 @@
+/* Define a animação fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Opcional: cria um efeito de deslocamento para baixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .footer {
     width: 100vw;
     background-image: var(--gradient);
+    opacity: 0; /* Inicia invisível */
+    animation: fadeIn 1.5s ease-out forwards; /* Aplica o efeito de fade-in */
 }
 
 .footer h2 {
     color: var(--dark-blue);
-    /* text-shadow: 5px 5px 0px var(--box-shadow); */
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     padding: 2rem;
+    animation: fadeIn 1.5s ease-out 0.3s forwards; /* Aplica o fade-in com pequeno atraso */
 }
 
 .contact {
@@ -21,7 +35,9 @@
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 1.25rem;
-    gap: 2.5rem;    
+    gap: 2.5rem;
+    opacity: 0; /* Inicia invisível */
+    animation: fadeIn 1.5s ease-out 0.6s forwards; /* Aplica o fade-in com atraso */
 }
 
 .contact__form__item h3 {
@@ -38,7 +54,7 @@
 
 .contact__form__link::placeholder {
     color: var(--dark-blue);
-    font-family: var(primarySource);
+    font-family: var(--primarySource);
     font-size: 0.7rem;
     opacity: 50%;
 }
@@ -56,8 +72,8 @@
 }
 
 .contact__form__button:hover {
-    background-color: var(--light-blue); 
-    transform: scale(1.05); 
+    background-color: var(--light-blue);
+    transform: scale(1.05);
 }
 
 .contact__content {
@@ -110,16 +126,18 @@
 
 .contact__content__list img {
     width: 1.5rem;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .contact__content__list img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .footer__text {
     padding: 1rem 0rem;
+    opacity: 0; /* Inicia invisível */
+    animation: fadeIn 1.5s ease-out 0.9s forwards; /* Aplica o fade-in com atraso */
 }
 
 .footer__text p {

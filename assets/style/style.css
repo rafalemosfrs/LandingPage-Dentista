@@ -7,9 +7,13 @@
 @import url(./clinic.css);
 @import url(./contact.css);
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --primarySource: "Poppins";
-    --mainBackground: ##FFF9FD;
+    --mainBackground: #FFF9FD;
     --black: #000000;
     --white: #FFFFFF;
     --light-blue: #44C6E9;
