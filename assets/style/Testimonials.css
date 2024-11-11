@@ -137,12 +137,12 @@
 
 .testimonials__content {
     opacity: 0;
-    transform: translateX(100%); /* Inicia fora da tela à direita */
+    transform: translateX(100%); 
     transition: opacity 2.5s ease, transform 2s ease;
 }
 
 .testimonials__content--visible {
     opacity: 1;
-    transform: translateX(0); /* Retorna à posição original */
+    transform: translateX(0);
 }
 

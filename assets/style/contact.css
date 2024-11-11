@@ -1,8 +1,7 @@
-/* Define a animação fade-in */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Opcional: cria um efeito de deslocamento para baixo */
+        transform: translateY(20px); 
     }
     to {
         opacity: 1;
@@ -13,8 +12,8 @@
 .footer {
     width: 100vw;
     background-image: var(--gradient);
-    opacity: 0; /* Inicia invisível */
-    animation: fadeIn 1.5s ease-out forwards; /* Aplica o efeito de fade-in */
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-out forwards; 
 }
 
 .footer h2 {
@@ -23,7 +22,7 @@
     font-weight: 600;
     text-align: center;
     padding: 2rem;
-    animation: fadeIn 1.5s ease-out 0.3s forwards; /* Aplica o fade-in com pequeno atraso */
+    animation: fadeIn 1.5s ease-out 0.3s forwards; 
 }
 
 .contact {
@@ -36,8 +35,8 @@
     align-items: center;
     padding: 2.5rem 1.25rem;
     gap: 2.5rem;
-    opacity: 0; /* Inicia invisível */
-    animation: fadeIn 1.5s ease-out 0.6s forwards; /* Aplica o fade-in com atraso */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out 0.6s forwards; 
 }
 
 .contact__form__item h3 {
@@ -68,7 +67,7 @@
     border-radius: 0.6rem;
     padding: 0.5rem 5rem;
     cursor: pointer;
-    transition: all 0.3s ease; /* Adiciona transição suave */
+    transition: all 0.3s ease; 
 }
 
 .contact__form__button:hover {
@@ -136,8 +135,8 @@
 
 .footer__text {
     padding: 1rem 0rem;
-    opacity: 0; /* Inicia invisível */
-    animation: fadeIn 1.5s ease-out 0.9s forwards; /* Aplica o fade-in com atraso */
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-out 0.9s forwards; 
 }
 
 .footer__text p {
