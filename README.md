@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 # README - Landing Page de Dentista
 
