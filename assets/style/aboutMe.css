@@ -110,3 +110,8 @@
         text-shadow: 5px 5px 0px var(--box-shadow);
     }
 }
+
+.aboutMe { width: 100%; padding: 3rem 1.25rem; }
+.aboutMe__content { width: 100%; max-width: 720px; }
+.aboutMe img { width: 100%; max-width: 400px; margin-left: 0; }
+

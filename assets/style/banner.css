@@ -164,3 +164,19 @@
     }
 }
 
+.banner { margin-top: 35px; }
+
+.banner__image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .banner { display: flex; gap: 2rem; align-items: center; }
+  .banner__image { width: min(50vw, 520px); height: auto; order: 2; }
+  .banner__content { width: 100%; max-width: 560px; margin: 0; order: 1; }
+}
+
+

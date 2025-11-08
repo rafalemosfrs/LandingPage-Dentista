@@ -239,3 +239,13 @@
         font-size: 1rem;
     }
 }
+
+.contact { width: 100%; }
+.contact__form__link {
+  width: 100%;
+  max-width: 720px;
+}
+.contact__content { padding: 0 1.25rem; }
+
+
+

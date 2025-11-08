@@ -47,3 +47,7 @@
         font-size: 4rem;
     }
 }
+
+.clinic { width: 100%; }
+.clinic__image { width: 100%; height: auto; }
+

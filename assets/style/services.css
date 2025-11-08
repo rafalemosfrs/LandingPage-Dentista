@@ -146,3 +146,24 @@
     opacity: 1;
     transform: translateX(0); 
 }
+
+.services { width: 100%; padding: 3.75rem 1.25rem; }
+
+.services__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  width: 100%;
+  justify-items: center;
+}
+
+.services__content__service {
+  width: 100%;
+  max-width: 520px;
+}
+
+@media (min-width: 600px) {
+  .services__content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .services__content__service { width: auto; }
+}
+

@@ -33,3 +33,20 @@ body{
     font-size: 1rem;
     font-weight: 400;
 };
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { overflow-x: hidden; }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+.menu, .banner, .services, .testimonials, .aboutMe, .clinic,
+.contact, .footer, .services__content, .testimonials__container {
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  body { font-size: 0.95rem; }
+}
